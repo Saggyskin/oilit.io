@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Throw PvP Online</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .hud { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .pill code { opacity:.85 }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="row hud">
+        <div class="pill"><b>Controls</b> A/D move · SPACE (or W) jump · F throw · O deflect · I laser</div>
+        <div class="pill"><code>R</code> = reset match</div>
+      </div>
+
+      <div class="row hud">
+        <div class="pill">Score P1: <b id="s1">0</b></div>
+        <div class="pill">Score P2: <b id="s2">0</b></div>
+        <div class="pill">Lives P1: <b id="l1">3</b></div>
+        <div class="pill">Lives P2: <b id="l2">3</b></div>
+        <div class="pill">Shield P1: <b id="sh1">3</b></div>
+        <div class="pill">Shield P2: <b id="sh2">3</b></div>
+        <div class="pill">Laser CD P1: <b id="cd1">0.0</b>s</div>
+        <div class="pill">Laser CD P2: <b id="cd2">0.0</b>s</div>
+      </div>
+
+      <div class="row hud">
+        <div class="pill">Room: <span id="room">-</span></div>
+        <div class="pill">You: <span id="you">-</span></div>
+        <div class="pill">Lobby: <span id="lobby">-</span></div>
+        <div class="pill">Status: <b id="status">connecting…</b></div>
+      </div>
+    </div>
+
+    <canvas id="c" width="960" height="520"></canvas>
+
+    <div class="bottom">
+      <div class="hint">
+        PNGs anpassen in <code>public/avatars/</code>: <b>p1.png</b>, <b>p2.png</b>, <b>ball.png</b>
+      </div>
+    </div>
+  </div>
+
+  <script src="/client.js"></script>
+</body>
+</html>

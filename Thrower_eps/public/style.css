@@ -1,0 +1,10 @@
+*{box-sizing:border-box}
+body{margin:0;background:#0b0f1a;color:#e9eefc;font-family:system-ui,Arial;min-height:100vh;display:grid;place-items:center}
+.card{width:min(1000px,95vw);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:14px;box-shadow:0 18px 60px rgba(0,0,0,.45)}
+.top{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:10px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 12px;font-size:13px;opacity:.9}
+canvas{width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(180deg, rgba(120,160,255,.10), rgba(0,0,0,.15))}
+.bottom{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:10px;opacity:.9;font-size:13px}
+.status span{font-weight:700}
+.hint{opacity:.75}
